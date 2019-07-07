@@ -7,7 +7,7 @@ import torch.nn.parallel
 import torch.backends.cudnn as cudnn
 import torch.optim as optim
 import torch.utils.data
-import torchvision.datasets
+import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,3 +19,23 @@ manualSeed = 999
 print("Random Seed:", manualSeed)
 random.seed(manualSeed)
 torch.manual_seed(manualSeed)
+
+dataroot = 'datasets/celeba'
+workers = 4
+batch_size = 128
+
+image_size = 64
+nc = 3
+# Size of z latent vector
+nz = 100
+# Size of feature maps in generator
+ngf = 64
+#Size of feature maps in discriminator
+ndf = 64
+
+epochs = 5
+lr = 0.0002
+beta1 = 0.5
+n_gpu = 1
+
+dataset = 
