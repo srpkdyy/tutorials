@@ -20,7 +20,7 @@ print("Random Seed:", manualSeed)
 random.seed(manualSeed)
 torch.manual_seed(manualSeed)
 
-dataroot = 'datasets/celeba'
+dataroot = 'data/celeba'
 workers = 4
 batch_size = 128
 
